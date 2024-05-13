@@ -43,7 +43,7 @@ public class BookMarketController {
 		view.displayCart(mCart);
 		
 		if (!mCart.isEmpty()) {
-			if (!view.askConfirm("장바구니를 비우려면 yes를 입력하세요 : ", "yes")) {
+			if (view.askConfirm("장바구니를 비우려면 yes를 입력하세요 : ", "yes")) {
 				mCart.resetCart();
 				view.showMessage("장바구니를 비웠습니다.");
 			};

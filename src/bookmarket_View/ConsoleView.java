@@ -63,7 +63,7 @@ public class ConsoleView {
 		System.out.println(message);
 
 		Scanner input = new Scanner(System.in);
-		if (input.nextLine().equals(yes)) {
+		if (input.nextLine().equals("yes")) {
 			return true;
 		}
 		return false;
