@@ -1,9 +1,9 @@
 package bookmarket;
 
-import bookmarket_View.ConsoleView;
-import bookmarket_controller.BookMarketController;
-import bookmarket_model.BookStorage;
-import bookmarket_model.Cart;
+import bookmarket.controller.BookMarketController;
+import bookmarket.model.BookStorage;
+import bookmarket.model.Cart;
+import bookmarket.view.ConsoleView;
 
 public class BookMarket {
 
@@ -15,11 +15,10 @@ public class BookMarket {
 		// view 생성
 		ConsoleView view = new ConsoleView();
 		
-		// controller 생성
+		// controller 생성 (model, view)
 		BookMarketController controller = new BookMarketController(bookStorage, cart, view);
-		
-		// controller.start()
 		controller.start();
+		
 		
 	}
 

@@ -1,4 +1,4 @@
-package bookmarket_model;
+package bookmarket.model;
 
 public class Book {
 	private int bookId;
@@ -7,13 +7,12 @@ public class Book {
 	private String publisher;
 	private int price;
 	
-	public Book(int bookId, String title,  String author, String publisher, int price) {
+	public Book(int bookId, String title, String author, String publisher, int price) {
 		this.bookId = bookId;
 		this.title = title;
 		this.author = author;
 		this.publisher = publisher;
 		this.price = price;
-		
 	}
 	
 	public int getBookId() {
@@ -37,6 +36,4 @@ public class Book {
 		return bookId + ", " + title + ", " + author + ", " + publisher
 				+ ", " + price + "원";
 	}
-	
-	
 }
